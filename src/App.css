@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+    max-width: 1400px;
+    margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header h1 {
+    font-family: 'Caveat';
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+.product {
+    width: 25%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product .body {
+    border: 1px solid gray;
+    border-radius: 1px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.ui.grid.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ui.cards .card .image {
+    height: 200px;
+    padding: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.ui.cards .card .image img {
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+}
+
+.ui.cards .card .content .header {
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.ui .cards .card .content .description {
+    height: 36px;
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+.productContainer .body {
+    display: flex;
+    margin-top: 10px;
+}
+
+.productContainer .body .image {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.productContainer .body .image img {
+    height: 200px;
+}
+
+.productContainer .body .content {
+    width: 100%;
+}
+
+.productContainer .body .content h1 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.productContainer .body .content h2 {
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.productContainer .body .content h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.productContainer .body .content p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
 }
